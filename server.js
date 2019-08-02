@@ -1,6 +1,6 @@
 const express = require('express');
-const { log } = require('console');
 const { join } = require('path');
+const { log, error } = require('console');
 
 const server = express();
 
@@ -11,3 +11,5 @@ server.get('/', (req, res) => {
 });
 
 server.listen(3000, () => log('http://localhost:3000'));
+
+server.on('error', (err) => error(err));
