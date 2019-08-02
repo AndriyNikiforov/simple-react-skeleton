@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './pages/Main';
 
-ReactDOM.render(<h1>Skeleton</h1>, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
